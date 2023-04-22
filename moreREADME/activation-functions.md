@@ -1,8 +1,20 @@
-## Possible activation functions for the DNN
+# Possible activation functions for the DNN
 
-- The rectified linear unit (ReLU) activation function can be used for faster model training. However, a linear activation function has two major problems :
+- Determining the correct activation function to use.  
 
-It’s not possible to use backpropagation as the derivative of the function is a constant and has no relation to the input x.
+## Linear Activation Function
+
+The linear activation function, also known as "no activation," or "identity function" (multiplied x1.0), is where the activation is proportional to the input.
+
+The function doesn't do anything to the weighted sum of the input, it simply spits out the value it was given.
+
+- The rectified linear unit (ReLU) activation function can be used for faster model training.
+
+```yml
+However, a linear activation function has two major problems:
+```
+
+It’s not possible to use backpropagation as the derivative of the function, because it is a constant and has no relation to the input x.
 All layers of the neural network will collapse into one if a linear activation function is used. No matter the number of layers in the neural network, the last layer will still be a linear function of the first layer. So, essentially, a linear activation function turns the neural network into just one layer.
 
 - The Tanh activation function for sentiment analysis.
