@@ -27,7 +27,12 @@ Finally, a few rules for choosing the activation function for your output layer 
 - Binary Classification—Sigmoid/Logistic Activation Function
 - Multiclass Classification—Softmax
 - Multilabel Classification—Sigmoid
-- The activation function used in hidden layers is typically chosen based on the type of neural network architecture.
+
+The activation function used in hidden layers is typically chosen based on the type of neural network architecture.
+
+- Convolutional Neural Network (CNN): ReLU activation function.
+- Recurrent Neural Network: Tanh and/or Sigmoid activation function.
+
 
 ## Linear Activation Function
 
