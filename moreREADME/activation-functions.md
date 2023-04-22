@@ -1,6 +1,32 @@
-# Possible activation functions for the DNN
+# Notes from my research into possible activation functions for the DNN
 
-- Determining the correct activation function to use.  
+[reference](<https://www.v7labs.com/blog/neural-networks-activation-functions>)
+
+- Determining the correct activation function to use.
+
+## How to choose the right Activation Function?
+
+You need to match your activation function for your output layer based on the type of prediction problem that you are solving—specifically, the type of predicted variable.
+
+- Here’s what you should keep in mind.
+
+As a rule of thumb, you can begin with using the ReLU activation function and then move over to other activation functions if ReLU doesn’t provide optimum results.
+
+And here are a few other guidelines to help you out.
+
+- ReLU activation function should only be used in the hidden layers.
+- Sigmoid/Logistic and Tanh functions should not be used in hidden layers as they make the model more susceptible to problems during training (due to vanishing gradients).
+- Swish function is used in neural networks having a depth greater than 40 layers.
+
+```yml
+Finally, a few rules for choosing the activation function for your output layer based on the type of prediction problem that you are solving:
+```
+
+- Regression - Linear Activation Function
+- Binary Classification—Sigmoid/Logistic Activation Function
+- Multiclass Classification—Softmax
+- Multilabel Classification—Sigmoid
+- The activation function used in hidden layers is typically chosen based on the type of neural network architecture.
 
 ## Linear Activation Function
 
@@ -39,4 +65,4 @@ They allow backpropagation because now the derivative function would be related 
 They allow the stacking of multiple layers of neurons as the output would now be a non-linear combination of input passed through multiple layers. Any output can be represented as a functional computation in a neural network.
 
 - The Tanh activation function for sentiment analysis.
-- The DNN will also use Sigmoid activation function for probability distributions.
+- The Sigmoid activation function for probability distributions.
