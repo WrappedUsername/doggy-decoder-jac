@@ -54,28 +54,4 @@ walker init {
 }
 ```
 
-## Building walker.jac file
-
-- Converting that pseudocode into Jac programming language:
-
-```Jac
-node landing_page;
-node success_page;
-node conversion_page
-
-edge anon_guest
-edge authorized_user
-edge user_id
-edge lp_hero_section
-edge lp_cta_button_clicked
-edge sp_hero_section
-edge sp_cta_button_clicked
-edge cp_hero_section
-edge cp_cta_button_clicked
-
-walker create_app {
-    
-}
-```
-
 ## Continued in moreREADME folder
