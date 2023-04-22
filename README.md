@@ -6,6 +6,8 @@
 </p>
 
 The structure of the app will be in the form of a graph.
+  
+- The DNN will be using a Tanh activation function for sentiment analysis.
 
 - Creating markdown mermaid diagrams as pseudocode:
 
