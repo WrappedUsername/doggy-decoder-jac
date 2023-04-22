@@ -1,6 +1,7 @@
 # Notes from my research into possible activation functions for the DNN
 
-[reference](<https://www.v7labs.com/blog/neural-networks-activation-functions>)
+[reference: Jaseci Labs](https://www.youtube.com/watch?v=-0ggwByIppw)
+[reference: v7 Labs](<https://www.v7labs.com/blog/neural-networks-activation-functions>)
 
 - Determining the correct activation function to use.
 
