@@ -6,8 +6,12 @@
 </p>
 
 The structure of the app will be in the form of a graph.
-  
+
+## Possible activation functions for the DNN  
+
+- The DNN will be using a rectified linear unit (ReLU) activation function for a faster network.
 - The DNN will be using a Tanh activation function for sentiment analysis.
+- The DNN will also use Sigmoid activation function for probability distributions.
 
 - Creating markdown mermaid diagrams as pseudocode:
 
