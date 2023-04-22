@@ -33,6 +33,7 @@ The activation function used in hidden layers is typically chosen based on the t
 - Convolutional Neural Network (CNN): ReLU activation function.
 - Recurrent Neural Network: Tanh and/or Sigmoid activation function.
 
+![62b18a8dc83132e1a479b65d_neural-network-activation-function-cheat-sheet](https://user-images.githubusercontent.com/104662990/233810857-cd1a5545-a86d-4313-93d2-e6fcb35e9d65.jpeg)
 
 ## Linear Activation Function
 
