@@ -22,6 +22,8 @@ graph TD;
     node_landing_page-->node_success_page
     node_success_page-->node_conversion_page
     node_conversion_page-->node_webcam_ai_chat
+    node_user_profile_dashboard<-->node_webcam_ai_chat
+    node_webcam_ai_chat-->node_training_data_collector
 ```
 
 ```mermaid
@@ -61,8 +63,9 @@ walker init {
 }
 ```
 
-## Cyber-Security and AI Monitoring
+## Cyber-Security and AI Safety Monitoring
 
-DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden. Diligent monitoring of DIAT will ensure alignment.
+DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden. 
+- Diligent monitoring of DIAT will ensure alignment.
 
 ## Continued in moreREADME folder
