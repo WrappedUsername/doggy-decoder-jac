@@ -5,9 +5,12 @@
 <img alt="Stars" src="https://img.shields.io/github/stars/WrappedUsername/doggy-decoder-jac?style=flat-square&labelColor=343b41"/>
 </p>
 
+### I have no idea if this is even possible, but I think this will be a really fun project, and worth the effort to try to be the first to build an AI animal translator. I am not the only one with a project like this, so I might as well try to be the first AI animal translator! 
+
 - DIAT, a voice-to-text, text-to-voice enabled, machine vision, image classifaction capable, customizable avatar AI, using a webcam module interface to interact with authorized users, and anon guests at sign up.
 - The conversational AI Agent, will be used to interact with the human user, and provide value and helpful assistance throughout the user experience, beyond just providing animal translations.
 - The machine vision and audio capable AI Agent will collect animal sounds and visual behaviour for mapping the relational training data.
+- DIAT will be able to collect and train any animal sounds (cats, dolphins, etc.) in order to create training data, in order to translate all animal sounds (I just thought Doggy Decoder sounds cool, I also considered Parrot Pal).
 
 The structure of the app will be in the form of a graph.
 
