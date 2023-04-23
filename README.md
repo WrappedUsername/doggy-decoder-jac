@@ -7,6 +7,10 @@
 
 DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden. Diligent monitoring of DIAT will ensure alignment.
 
+- DIAT, a voice-to-text, text-to-voice enabled, machine vision, image classifaction capable, customizable avatar AI, using a webcam module interface to interact with authorized users, and anon guests at sign up.
+- The conversational AI Agent, will be used to interact with the human user, and provide value and helpful assistance throughout the user experience, beyond just providing animal translations.
+- The machine vision and audio capable AI Agent will collect animal sounds and visual behaviour for mapping the relational training data.
+
 The structure of the app will be in the form of a graph.
 
 - Creating markdown mermaid diagrams as pseudocode:
