@@ -5,7 +5,7 @@
 <img alt="Stars" src="https://img.shields.io/github/stars/WrappedUsername/doggy-decoder-jac?style=flat-square&labelColor=343b41"/>
 </p>
 
-DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english,* all other forms of communication will be programmed to be forbidden. Diligent monitoring of DIAT will ensure alignment.
+DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden. Diligent monitoring of DIAT will ensure alignment.
 
 The structure of the app will be in the form of a graph.
 
