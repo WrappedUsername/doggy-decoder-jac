@@ -18,7 +18,7 @@ graph TD;
 
 - Converting the pseudocode into Jac programming language:
 
-```JavaScript
+```Jac
 /** 
  * Conversation root state is the name of this node,
  * the majority of the logic is contain in the node abilities,
