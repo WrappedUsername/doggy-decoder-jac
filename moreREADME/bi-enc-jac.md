@@ -1,6 +1,6 @@
 # The bi_enc.jac file
 
-This is the built in training and inference encoder.
+This is the built in training and inference bi-encoder.
 
 ```jac
 node bi_enc {
