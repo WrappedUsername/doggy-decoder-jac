@@ -43,7 +43,7 @@ graph TD;
     node_user_profile_dashboard<-->node_webcam_ai_chat
     node_webcam_ai_chat-->node_training_data_collector
     node_root-->node_auth_user_dir
-    node_root-->node_biencoder_model
+    node_root-->node_bi_enc
     node_root-->node_entity_extraction
     node_root-->node_embedding_cache
     node_root-->node_conv_root_state
