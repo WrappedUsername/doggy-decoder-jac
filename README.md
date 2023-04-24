@@ -18,12 +18,31 @@ The structure of the app will be in the form of a graph.
 
 ```mermaid
 graph TD;
-    root-->node_landing_page
+    node_root-->node_landing_page
+    node_landing_page<-->node_anon_guest_access
     node_landing_page-->node_success_page
     node_success_page-->node_conversion_page
     node_conversion_page-->node_webcam_ai_chat
     node_user_profile_dashboard<-->node_webcam_ai_chat
     node_webcam_ai_chat-->node_training_data_collector
+    node_root-->node_auth_user_dir
+    node_root-->node_biencoder_model
+    node_root-->node_entity_extraction
+    node_root-->node_embedding_cache
+    node_root-->node_conv_root_state
+    node_conv_root_state-->node_VA_state_3
+    node_VA_state_3-->node_VA_state_1
+    node_VA_state_3-->node_VA_state_2
+    node_VA_state_1-->node_VA_state_2
+    node_conv_root_state-->node_VA_state_1
+    node_conv_root_state-->node_VA_state_2
+    node_conv_root_state-->node_faq_state
+    node_faq_state-->node_faq_answer_1
+    node_faq_state-->node_faq_answer_2
+    node_faq_state-->node_faq_answer_3
+    node_auth_user_dir-->node_user_data_1
+    node_auth_user_dir-->node_user_data_2
+    node_auth_user_dir-->node_user_data_3
 ```
 
 ```mermaid
