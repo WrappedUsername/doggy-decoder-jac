@@ -45,9 +45,9 @@ edge transition {
 
 graph landing_page_graph {
     has anchor root;
-    
+
     spawn {
-        root = spawn node::chat_state(
+        root = spawn node::landing_page(
         title = "Welcome",
         message = "Welcome to Doggy Decoder! How can I help, today?",
         hero_section = "TODO", // @dev Maybe import this, from it's own file, if it's large.
@@ -55,13 +55,13 @@ graph landing_page_graph {
         prompts = ["TODO_1","TODO_2","prices","quit"]
     );
 
-    prices = spawn root +[transition(intent="prices")] +> node::chat_state(
+    prices = spawn root +[transition(intent="prices")] +> node::landing_page(
         title = "prices",
         message = "Prices...TODO message",
         prompts = ["TODO_3", "TODO_4" ,"TODO_5", "quit"]
     );
 
-    TODO_3 = spawn TODO +[transition(intent="TODO_3")] +> node::chat_state(
+    TODO_3 = spawn TODO +[transition(intent="TODO_3")] +> node::landing_page(
         title = "TODO_3",
         message = "TODO_3",
         prompts = ["TODO_6", "quit"]
@@ -69,7 +69,7 @@ graph landing_page_graph {
         
         TODO_3 +[transition(intent="TODO_6")] +> TODO;
 
-    TODO_4 = spawn TODO +[transition(intent="TODO_4")] +> node::chat_state(
+    TODO_4 = spawn TODO +[transition(intent="TODO_4")] +> node::landing_page(
         title = "TODO_4",
         message = "TODO_4",
         prompts = ["TODO_6", "quit"]
@@ -77,7 +77,7 @@ graph landing_page_graph {
 
         TODO_4 +[transition(intent="TODO_6")] +> TODO;
 
-    TODO_5 = spawn TODO +[transition(intent="TODO_5")] +> node::chat_state(
+    TODO_5 = spawn TODO +[transition(intent="TODO_5")] +> node::landing_page(
         title = "TODO",
         message = "TODO",
         prompts = ["TODO_6","quit"]
@@ -85,27 +85,27 @@ graph landing_page_graph {
 
         TODO_5 +[transition(intent="TODO_6")] +> TODO;
 
-    TODO_1 = spawn conv_root_state +[transition(intent="TODO_1")]+> node::chat_state(
+    TODO_1 = spawn root +[transition(intent="TODO_1")]+> node::landing_page(
         title = "TODO_1",
         message = "TODO_1",
         prompts = ["TODO_2","TODO_7","prices","quit"]
     );
 
-    TODO_2 = spawn TODO_1 +[transition(intent="TODO_2")]+> node::chat_state(
+    TODO_2 = spawn TODO_1 +[transition(intent="TODO_2")]+> node::landing_page(
         title = "TODO_2",
         message = "TODO_1",
         prompts = ["TODO_8","TODO_7","quit"]
     );
 
-        conv_root_state +[transition(intent="TODO_2")] +> TODO_2;
+        root +[transition(intent="TODO_2")] +> TODO_2;
 
-    TODO_8 = spawn TODO_2 +[transition(intent="TODO_8")]+> node::chat_state(
+    TODO_8 = spawn TODO_2 +[transition(intent="TODO_8")]+> node::landing_page(
         title = "TODO_2",
         message ="TODO_1",
         prompts = ['TODO_7',"quit"]
     );
 
-    TODO_7 = spawn TODO_2 +[transition(intent="TODO_7")]+> node::chat_state(
+    TODO_7 = spawn TODO_2 +[transition(intent="TODO_7")]+> node::landing_page(
         title = "TODO_7",
         message ="TODO_1",
         prompts = ['TODO_2',"quit"]
