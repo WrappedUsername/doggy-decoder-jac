@@ -1,4 +1,5 @@
 .env
+.jaseci_logs
 logoutput
 modeloutput
 dialogue_intent_model
