@@ -1,4 +1,4 @@
-# Building graph.jac file
+# Building faq_graph.jac file
 
 ```mermaid
 graph TD;
@@ -27,17 +27,17 @@ graph TD;
  * of the conversation root state node. Conversation root sate node abilities,
  * are triggered by talker walker entry and exit.
 */ 
-node state {
-    has title;
-    has message;
-    has prompts;
+node conv_root_state;
+node faq_state {
+    has question;
+    has answer;
 }
 
 edge transition {
     has intent;
 }
 
-graph main_graph {
-    has anchor main_root;
+graph faq_graph {
+    has anchor convo_root_state;
 }
 ```
