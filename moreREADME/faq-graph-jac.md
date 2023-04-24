@@ -11,9 +11,9 @@ graph TD;
     node_chat_state-->node_chat_state_2
     node_chat_state-->node_chat_state_3
     node_conv_root_state-->node_faq_state
-    node_faq_state-->node_faq_answer_1
-    node_faq_state-->node_faq_answer_2
-    node_faq_state-->node_faq_answer_3
+    node_faq_state-->node_faq_state_1
+    node_faq_state-->node_faq_state_2
+    node_faq_state-->node_faq_state_3
 ```
 
 - Converting the pseudocode into Jac programming language:
@@ -31,11 +31,31 @@ node faq_state {
     has answer;
 }
 
+/**
+ * This is a transition edge, and it has the intent to traverse to the next,
+ * node.
+*/
 edge transition {
     has intent;
 }
 
 graph faq_graph {
     has anchor convo_root_state;
+    spawn {
+        // Spawning the nodes
+        conv_root_state = spawn node::faq_state;
+        faq_state_1 = spawn node::faq_state(
+            question="TODO",
+            answer="TODO"
+        );
+        faq_state_2 = spawn node::faq_state(
+            question="TODO",
+            answer="TODO"
+        );
+        faq_state_3 = spawn node::faq_state(
+            question="TODO",
+            answer="TODO"
+        );
+    }
 }
 ```

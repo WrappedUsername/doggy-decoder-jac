@@ -34,9 +34,9 @@ graph TD;
     node_chat_state-->node_chat_state_2
     node_chat_state-->node_chat_state_3
     node_conv_root_state-->node_faq_state
-    node_faq_state-->node_faq_answer_1
-    node_faq_state-->node_faq_answer_2
-    node_faq_state-->node_faq_answer_3
+    node_faq_state-->node_faq_state_1
+    node_faq_state-->node_faq_state_2
+    node_faq_state-->node_faq_state_3
     node_auth_user_dir-->node_user_data_1
     node_auth_user_dir-->node_user_data_2
     node_auth_user_dir-->node_user_data_3
