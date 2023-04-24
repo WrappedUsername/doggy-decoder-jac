@@ -1,4 +1,4 @@
-# The bi_enc.jac file
+# The 'bi_enc.jac' file
 
 This is the built in training and inference bi-encoder.
 
