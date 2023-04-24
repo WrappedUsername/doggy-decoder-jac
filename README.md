@@ -12,6 +12,24 @@
 - The machine vision and audio capable AI Agent will collect animal sounds and visual behaviour for mapping the relational training data.
 - DIAT will be able to collect and train itself to translate any animal sounds (cats, dolphins, etc.) creating new training data, in order to translate all animal sounds (I just thought Doggy Decoder sounds cool, I also considered Parrot Pal).
 
+```yml
+Saving state with a maintainer walker:
+```
+
+```jac
+can cleanup with talker entry{
+    if (!vistor:hoping) {
+       spawn *(global.node_conv_root_state) walker::maintainer(
+            user_id = visitor.user_id,
+            user_context = vistor.user_context,
+            dialogue_context = vistor.dialogue_context,
+            last_conv_state = vistor.state_for_continuing
+            // Add ERC-4337 account abstractions or any other saved states, etc here.
+       );
+    }
+}
+```
+
 The structure of the app will be in the form of a graph.
 
 - Creating markdown mermaid diagrams as pseudocode:
