@@ -87,10 +87,10 @@ import {*} with "./walker.jac";
 walker init {
 
     root {
-        // creates an instant of the chat_graph
+        // creates an instance of the chat_graph
         spawn here ++> graph::chat_graph;
         
-        // creates an instant of the faq_graph
+        // creates an instance of the faq_graph
         spawn here ++> graph::chat_graph;
 
         // creates an instance of the walker, talker
@@ -101,7 +101,8 @@ walker init {
 
 ## Cyber-Security and AI Safety Monitoring
 
-DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden. 
+DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden.
+
 - Diligent monitoring of DIAT will ensure alignment.
 
 ## Continued in moreREADME folder
