@@ -1,4 +1,4 @@
-# Building the landing_page.jac node
+# Building the landing_page_graph.jac graph
 
 The structure of the app will be in the form of a graph.
 
