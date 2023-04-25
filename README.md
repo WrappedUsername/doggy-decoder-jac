@@ -5,12 +5,7 @@
 <img alt="Stars" src="https://img.shields.io/github/stars/WrappedUsername/doggy-decoder-jac?style=flat-square&labelColor=343b41"/>
 </p>
 
-- Possible logo designs
-
-<img align="left" width="400" height="400" src="https://user-images.githubusercontent.com/104662990/234414639-133c42b7-ce99-4559-b313-dc91ea296631.jpg"></img>
-
-<img align="left" width="400" height="400" src="https://user-images.githubusercontent.com/104662990/234415678-ce4be4e0-c8be-474e-9937-42c6c026b4b6.jpg"></img>
-
+![doggy-decoder-logo](https://user-images.githubusercontent.com/104662990/234423715-bb940989-cf4c-4cb3-a2a5-feaab8d592a0.jpeg)
 
 ### I have no idea if this is even possible, but I think this will be a really fun project, and worth the effort to try to be the first to build an AI animal translator. I am not the only one with a project like this, so I might as well try to be the first AI animal translator! 
 
