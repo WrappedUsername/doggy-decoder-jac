@@ -105,7 +105,7 @@ walker init {
         spawn here ++> graph::chat_graph;
         
         // creates an instance of the faq_graph
-        spawn here ++> graph::chat_graph;
+        spawn here ++> graph::faq_graph;
 
         // creates an instance of the walker, talker
         spawn --> walker::talker;
