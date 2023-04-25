@@ -32,6 +32,32 @@ can cleanup with talker entry{
 
 The structure of the app will be in the form of a graph.
 
+[reference: Jaseci Bible](https://github.com/Jaseci-Labs/jaseci/raw/main/support/bible/pdf/jaseci_bible.pdf)
+
+```yml
+Jaseci Graph described as a 7-tuple (N, E, C, s, t, cN , cE ), where:
+```
+
+```mermaid
+---
+title: 7-tuple (N, E, C, s, t, cN , cE) Jaseci Graph
+---
+classDiagram
+  N --> E : s = maps the source node to an edge
+  N --> E : t = maps the target node to an edge
+  C <-- N : cN = maps the nodes to context
+  C <-- E : cE = maps the edges to context
+  class N{
+    +the set of nodes in graph
+  }
+  class E{
+    +the set of edges in graph
+  }
+  class C{
+    +the set of all contexts
+  }
+```
+
 - Creating markdown mermaid diagrams as pseudocode:
 
 ```mermaid
