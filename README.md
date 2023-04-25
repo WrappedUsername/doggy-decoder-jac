@@ -69,8 +69,8 @@ journey
         Call to Action: 4: anon_visitor
         Clicked cta Button: 5: anon_visitor
     section Success Page
-        create user profile: 5: auth_user
         subscription payment: 5: auth_user
+        create user profile: 5: auth_user
     section Conversion Page
         Payment confirmation: 5: auth_user
         Welcome section: 5: auth_user 
