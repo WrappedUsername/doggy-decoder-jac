@@ -46,12 +46,12 @@ node landing_page {
     /// @notice declaring that something
     // can do_something;
 
-    /// @notice The nodes abililty to do something (a function)
+    /// @notice The nodes abililty to do something
     // can do_something {}
 }
 
 /**
- * This is a transition edge, and it has the intent to traverse to the next,
+ * This is a transition edge, and it has the intent ability, to traverse to the next
  * node.
 */
 edge transition {
