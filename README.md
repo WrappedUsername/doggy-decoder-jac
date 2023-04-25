@@ -81,10 +81,12 @@ journey
 title: Sign-up example
 ---
 erDiagram
-    ANON-GUEST-ACCESS ||--o{ SIGN-UP : clicks-cta-button
+    ANON-VISITOR ||--o{ SIGN-UP : clicks-cta-button
     BETA-ACCESS-SIGN-UP ||--|{ BETA-ACCESS-LIFETIME-MEMBERSHIP : contains
     AUTHORIZED-USERS }|..|{ AI-PROFILE-AVATAR-GENERATOR-DASHBOARD : uses
+    BETA-ACCESS-LIFEETIME-MEMBERSHIP }|..|{ AI-PROFILE-AVATAR-GENERATOR-DASHBOARD : uses
     BETA-ACCESS-LIFEETIME-MEMBERSHIP }|..|{ AI-ANIMAL-TRANSLATOR : enjoys
+    AUTHORIZED-USERS }|..|{ AI-ANIMAL-TRANSLATOR : enjoys
 ```
 
 ## Building main.jac file
