@@ -1,5 +1,11 @@
 .env
 .jaseci_logs
+*session
+*jir
+*.jir
+ner.json
+modelout*
+train*
 logoutput
 modeloutput
 dialogue_intent_model

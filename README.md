@@ -152,4 +152,8 @@ DIAT should be programmed to avoid any communication with all other AI Agents in
 
 - Diligent monitoring of DIAT will ensure alignment.
 
+```bash
+sudo service redis-server restart
+```
+
 ## Continued in moreREADME folder
