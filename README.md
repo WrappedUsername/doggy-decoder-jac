@@ -67,14 +67,16 @@ classDiagram
 
 ```mermaid
 graph TD;
-    node_root-->node_landing_page
+    node_root-->node_client
+    node_client-->node_landing_page
+    node_root-->node_server
+    node_server-->node_auth_user_dir
+    node_server-->node_models
     node_landing_page-->node_success_page
     node_success_page-->node_conversion_page
     node_conversion_page-->node_webcam_ai_chat
     node_user_profile_dashboard<-->node_webcam_ai_chat
     node_webcam_ai_chat-->node_training_data_collector
-    node_root-->node_auth_user_dir
-    node_root-->node_models
     node_models-->node_bi_enc
     node_models-->node_entity_extraction
     node_models-->node_embedding_cache
