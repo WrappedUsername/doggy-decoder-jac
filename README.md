@@ -74,15 +74,15 @@ graph TD;
     node_user_profile_dashboard<-->node_webcam_ai_chat
     node_webcam_ai_chat-->node_training_data_collector
     node_root-->node_auth_user_dir
-    node_root-->node_bi_enc
-    node_root-->node_entity_extraction
-    node_root-->node_embedding_cache
-    node_root-->node_conv_root_state
-    node_conv_root_state-->node_chat_state
+    node_root-->node_models
+    node_models-->node_bi_enc
+    node_models-->node_entity_extraction
+    node_models-->node_embedding_cache
+    node_models-->node_chat_state
     node_chat_state-->node_chat_state_1
     node_chat_state-->node_chat_state_2
     node_chat_state-->node_chat_state_3
-    node_conv_root_state-->node_faq_state
+    node_models-->node_faq_state
     node_faq_state-->node_faq_state_1
     node_faq_state-->node_faq_state_2
     node_faq_state-->node_faq_state_3
