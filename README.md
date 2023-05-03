@@ -7,7 +7,7 @@
 
 ![doggy-decoder-logo](https://user-images.githubusercontent.com/104662990/234423715-bb940989-cf4c-4cb3-a2a5-feaab8d592a0.jpeg)
 
-### I have no idea if this is even possible, but I think this will be a really fun project, and worth the effort to try to be the first to build an AI animal translator. I am not the only one with a project like this, so I might as well try to be the first AI animal translator! 
+### I have no idea if this is even possible, but I think this will be a really fun project, and worth the effort to try to be the first to build an AI animal translator. I am not the only one with a project like this, so I might as well try to be the first AI animal translator
 
 - DIAT, a voice-to-text, text-to-voice enabled, machine vision, image classifaction capable, customizable avatar AI, using a webcam module interface to interact with authorized users, and anon guests at sign up.
 - The conversational AI Agent, will be used to interact with the human user, and provide value and helpful assistance throughout the user experience, beyond just providing animal translations.

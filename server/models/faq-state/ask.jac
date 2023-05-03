@@ -2,10 +2,10 @@ walker ask {
     can use.qa_classify;
     has question;
     root {
-        question = std.input("User > ");
-        take --> node::faq_root;
+        question = std.input("User question > ");
+        take --> node::server;
     }
-    faq_root {
+    server {
         answers = -->.answer;
         best_answer = use.qa_classify(
             text = question,
