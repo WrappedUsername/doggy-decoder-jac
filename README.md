@@ -106,7 +106,7 @@ journey
         create user profile: 5: auth_user
     section Conversion Page
         Payment confirmation: 5: auth_user
-        Welcome section: 5: auth_user 
+        Welcome section: 5: auth_user
 ```
 
 ```mermaid
@@ -138,7 +138,7 @@ walker init {
     root {
         // creates an instance of the chat_graph
         spawn here ++> graph::chat_graph;
-        
+
         // creates an instance of the faq_graph
         spawn here ++> graph::faq_graph;
 
@@ -150,7 +150,7 @@ walker init {
 
 ## Cyber-Security and AI Safety Monitoring
 
-DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT *must only communicate in english with all other AI Agents,* all other forms of communication will be programmed to be forbidden.
+DIAT should be programmed to avoid any communication with all other AI Agents in any other languages or forms of communication other than english. DIAT _must only communicate in english with all other AI Agents,_ all other forms of communication will be programmed to be forbidden.
 
 - Diligent monitoring of DIAT will ensure alignment.
 
