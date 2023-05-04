@@ -1,6 +1,6 @@
 {
-  "DIDEGGO Landing Page": [
-    "What is DIDEGGO?",
+  "Doggy Decoder Landing Page": [
+    "What is Doggy Decoder?",
     "",
     "",
     "",
@@ -23,8 +23,8 @@
     "",
     ""
   ],
-  "Voting Page": [
-    "How do I vote on proposals using DIDEGGO?",
+  "Features and Benefits of Doggy Decoder Page": [
+    "What are the features and benefits of Doggy Decoder?",
     "",
     "",
     "",
@@ -35,8 +35,8 @@
     "",
     ""
   ],
-  "Proposals Page": [
-    "How do I create a proposal using DIDEGGO?",
+  "Premium Beta Lifetime Membership Page": [
+    "What is the Premium Beta Lifetime Membership?",
     "",
     "",
     "",
@@ -47,11 +47,40 @@
     "",
     ""
   ],
-  "Citizens Dashboard": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""],
-  "": ["", "", "", "", "", "", "", "", "", ""]
+  "Premium Beta Lifetime Membership Pricing Page": [
+    "How much does the Premium Beta Lifetime Membership cost?", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ""
+  ],
+  "Doggy Decoder Membership Page": [
+    "What is the Doggy Decoder Membership?", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ""
+  ],
+  "Doggy Decoder Membership Pricing Page": [
+    "How much does the Doggy Decoder Membership cost?", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ""
+  ]
 }

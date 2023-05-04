@@ -1,46 +1,30 @@
 [
   {
-    "question": "What is DIDEGGO?",
-    "answer": "DIDEGGO Landing Page"
+    "question": "What is Doggy Decoder?",
+    "answer": "Doggy Decoder Landing Page"
   },
   {
     "question": "How do I quit and leave the app?",
     "answer": "Quit App Button"
   },
   {
-    "question": "How do I vote on proposals using DIDEGGO?",
-    "answer": "Voting Page"
+    "question": "What are the features and benefits of Doggy Decoder?",
+    "answer": "Features and Benefits of Doggy Decoder Page"
   },
   {
-    "question": "How do I create a proposal using DIDEGGO?",
-    "answer": "Proposals Page"
+    "question": "What is the Premium Beta Lifetime Membership?",
+    "answer": "Premium Beta Lifetime Membership Page"
   },
   {
-    "question": "TODO",
-    "answer": "TODO"
+    "question": "How much does the Premium Beta Lifetime Membership cost?",
+    "answer": "Premium Beta Lifetime Membership Pricing Page"
   },
   {
-    "question": "TODO",
-    "answer": "TODO"
+    "question": "What is the Doggy Decoder Membership?",
+    "answer": "Doggy Decoder Membership Page"
   },
   {
-    "question": "TODO",
-    "answer": "TODO"
-  },
-  {
-    "question": "TODO",
-    "answer": "TODO"
-  },
-  {
-    "question": "TODO",
-    "answer": "TODO"
-  },
-  {
-    "question": "TODO",
-    "answer": "TODO"
-  },
-  {
-    "question": "TODO",
-    "answer": "TODO"
+    "question": "How much does the Doggy Decoder Membership cost?",
+    "answer": "Doggy Decoder Membership Pricing Page"
   }
 ]

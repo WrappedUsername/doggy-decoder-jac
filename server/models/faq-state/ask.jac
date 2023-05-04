@@ -1,3 +1,5 @@
+import {*} with "./server/models/faq-state/faq_graph.jac";
+
 walker ask {
     can use.qa_classify;
     has question;
