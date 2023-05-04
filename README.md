@@ -158,4 +158,8 @@ DIAT should be programmed to avoid any communication with all other AI Agents in
 sudo service redis-server restart
 ```
 
-## Continued in moreREADME folder
+- Activating `.venv`
+
+```bash
+source .venv/bin/activate
+```
