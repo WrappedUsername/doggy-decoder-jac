@@ -22,13 +22,13 @@ graph chat_state {
         /// @notice This is the chat state used for the landing page, or returning auth-users.
         chat_state_1 = spawn node::chat_state(
             title = "Welcome Page",
-            message = "Welcome to Apexmite! Are you ready to report a sighting?",
-            prompts = ["Yes","Creator Dashboard","","Quit"]
+            message = "Welcome to Doggy Decoder! Are you ready to translate?",
+            prompts = ["Yes","","","Quit"]
         );
         chat_state_2 = spawn node::chat_state(
-            title = "Creator Dashboard",
-            message = "Welcome your Apexmite Content Federation, Creator Dashboard! Are you ready to ?",
-            prompts = ["Yes","Welcome Page","","Quit"]
+            title = "Translate Page",
+            message = "Great let's get started collecting training data for DIAT!",
+            prompts = ["Yes","","","Quit"]
         );
 
         // Connecting the nodes together
@@ -40,9 +40,9 @@ graph chat_state {
         /// @notice This is for new sign-ups to payment page.
         chat_state_1 +[intent_transition(intent="Yes")]+> node_success_page;
         /// @dev Please make this only accessable by auth-users from welcome page.
-        chat_state_1 +[intent_transition(intent="Creator Dashboard")]+> node_creator_dashboard;
+        // chat_state_1 +[intent_transition(intent="")]+> node_creator_dashboard;
 
         chat_state_2 +[intent_transition(intent="Welcome Page")]+> chat_state_1;
-        chat_state_2 +[intent_transition(intent="Creator Dashboard")]+> node_creator_dashboard;
+        // chat_state_2 +[intent_transition(intent="")]+> node_;
     }
 }
