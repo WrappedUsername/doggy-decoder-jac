@@ -56,11 +56,6 @@ next-env.d.ts
 yarn.lock
 public
 
-# Smart contracts
-artifacts
-cache
-typechain-types
-
 # System files
 .DS_Store
 Thumbs.db

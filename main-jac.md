@@ -12,7 +12,7 @@ walker init {
     root {
         // creates an instant of the chat_graph
         spawn here ++> graph::chat_graph;
-        
+
         // creates an instant of the faq_graph
         spawn here ++> graph::chat_graph;
 
