@@ -1,4 +1,4 @@
-2023-04-25 18:05:15,715 - WARNING - rt_warn: ask.jac:main.jac - line 2, col 4 - rule can_stmt - Attempting auto-load for use.qa_classify
-2023-04-25 18:05:15,716 - WARNING - rt_warn: ask.jac:main.jac - line 2, col 4 - rule can_stmt - Builtin action unable to be loaded - use.qa_classify
-2023-04-25 18:06:55,325 - WARNING - rt_warn: ask.jac:ask - line 12, col 0 - rule kw_expr_list - Attempting auto-load for use.qa_classify
-2023-04-25 21:47:21,512 - WARNING - rt_warn: ask.jac:main.jac - line 2, col 4 - rule can_stmt - Attempting auto-load for use.qa_classify
+2023-05-10 19:18:48,357 - ERROR - interface_error: Internal Exception: [Errno 2] No such file or directory: 'bi_enc.jac'
+2023-05-10 19:19:16,073 - ERROR - interface_error: Internal Exception: [Errno 2] No such file or directory: 'bi_enc.jac'
+2023-05-10 19:19:43,025 - ERROR - interface_error: Internal Exception: [Errno 2] No such file or directory: 'bi_enc.jac'
+2023-05-10 19:20:46,719 - WARNING - rt_warn: bi_enc.jac:bi_enc.jac - line 2, col 4 - rule can_stmt - Attempting auto-load for bi_enc.train
