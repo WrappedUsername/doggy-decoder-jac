@@ -163,3 +163,23 @@ sudo service redis-server restart
 ```bash
 source .venv/bin/activate
 ```
+
+- Training the bi-encoder model with the faq training data.
+
+- Starting the Redis server
+
+```bash
+sudo service redis-server restart
+```
+
+```bash
+actions load module jac_nlp.bi_enc
+```
+
+```bash
+jac run bi_enc.jac -walk train -ctx '{"train_file": "chat_training_data.json"}'
+```
+
+```bash
+jac run bi_enc.jac -walk infer -ctx "{\"labels\": [\"Doggy Decoder Landing Page\", \"Doggy Decoder Features and Benefits\", \"Doggy Decoder Webcam Translator\", \"Premium Beta Lifetime Membership Page\", \"Premium Beta Lifetime Membership Pricing Page\", \"Doggy Decoder Membership Page\", \"Doggy Decoder Membership Pricing Page\"]}"
+```
