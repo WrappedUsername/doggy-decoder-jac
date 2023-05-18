@@ -125,58 +125,59 @@ graph chat_state {
 
         /// @notice This is for new sign-ups to payment page.
         chat_state_1 +[intent_transition(intent="Yes")]+> node_landing_page;
-        chat_state_1 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_1 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_1 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_1 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_1 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_1 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_1 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_1 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_1 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_1 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
+        chat_state_1 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_2 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_2 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_2 +[intent_transition(intent="Yes")]+> node_features_benefits_page;
+        chat_state_2 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_2 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_2 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_2 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_2 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
+        chat_state_2 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_3 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_3 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_3 +[intent_transition(intent="Yes")]+> node_webcam_translator_page;
+        chat_state_3 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_3 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_3 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_3 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_3 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
+        chat_state_3 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_4 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_4 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_4 +[intent_transition(intent="Yes")]+> node_lifetime_membership_page;
+        chat_state_4 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_4 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_4 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_4 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_4 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
+        chat_state_4 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_5 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_5 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_5 +[intent_transition(intent="Yes")]+> node_lifetime_membership_pricing_page;
+        chat_state_5 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_5 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_5 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_5 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_5 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
+        chat_state_5 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_6 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_6 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_6 +[intent_transition(intent="Yes")]+> node_normal_membership_page;
+        chat_state_6 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_6 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_6 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_6 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_6 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_6 +[intent_transition(intent="Doggy Decoder Membership Pricing Page")]+> chat_state_7;
 
-        chat_state_7 +[intent_transition(intent="Yes")]+> node_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
-        chat_state_7 +[intent_transition(intent="")]+> chat_state_;
+        chat_state_7 +[intent_transition(intent="Yes")]+> node_normal_membership_pricing_page;
+        chat_state_7 +[intent_transition(intent="Doggy Decoder Landing Page")]+> chat_state_1;
+        chat_state_7 +[intent_transition(intent="Doggy Decoder Features and Benefits")]+> chat_state_2;
+        chat_state_7 +[intent_transition(intent="Doggy Decoder Webcam Translator")]+> chat_state_3;
+        chat_state_7 +[intent_transition(intent="Premium Beta Lifetime Membership Page")]+> chat_state_4;
+        chat_state_7 +[intent_transition(intent="Premium Beta Lifetime Membership Pricing Page")]+> chat_state_5;
+        chat_state_7 +[intent_transition(intent="Doggy Decoder Membership Page")]+> chat_state_6;
     }
 }

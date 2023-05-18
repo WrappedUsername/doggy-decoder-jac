@@ -27,7 +27,7 @@ node bi_enc {
 
 walker train {
     has train_file;
-    has num_train_epochs = 50, from_scratch = true, model_name = "";
+    has num_train_epochs = 50000, from_scratch = true, model_name = "";
     root {
         spawn here ++> node::bi_enc;
         take --> node::bi_enc;

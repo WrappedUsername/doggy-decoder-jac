@@ -21,7 +21,7 @@ node tfm_ner {
 
 walker train {
     has train_file;
-    has num_train_epochs = 50, from_scratch = true;
+    has num_train_epochs = 50000, from_scratch = true;
     root {
         spawn here ++> node::tfm_ner;
         take --> node::tfm_ner;

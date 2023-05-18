@@ -48,7 +48,7 @@ node tfm_ner {
 
 walker train {
     has train_file, model_type;
-    has num_train_epochs = 50, from_scratch = true, model_name = "";
+    has num_train_epochs = 50000, from_scratch = true, model_name = "";
     root {
         if (model_type == "bi_enc") {
             take --> node::bi_enc else {
