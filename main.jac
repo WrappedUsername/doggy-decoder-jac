@@ -4,9 +4,9 @@ import {*} with "./server/models/faq-state/ask.jac";
 import {*} with "./server/models/faq-state/kb.jac";
 import {*} with "./server/models/chat-state/chat_graph.jac";
 import {*} with "./server/models/chat-state/talk.jac";
-import {*} with "./server/models/ai_model.jac";
-import {*} with "./server/models/bi_enc.jac";
-import {*} with "./server/models/tfm_ner.jac";
+import {*} with "./ai_model.jac";
+import {*} with "./bi_enc.jac";
+import {*} with "./tfm_ner.jac";
 
 /// @notice this walker is reponsible for starting the program.
 walker init {

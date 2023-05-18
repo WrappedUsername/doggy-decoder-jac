@@ -18,12 +18,12 @@ graph faq_state {
             answer="Doggy Decoder Landing Page"
         );
         faq_state_2 = spawn node::faq_state(
-            question="How do I quit and leave the app?",
-            answer="Quit App Button"
+            question="What are the benefits of using Doggy Decoder?",
+            answer="Doggy Decoder Features and Benefits"
         );
         faq_state_3 = spawn node::faq_state(
-            question="What are the features and benefits of Doggy Decoder?",
-            answer="Features and Benefits of Doggy Decoder Page"
+            question="How do I use Doggy Decoder?",
+            answer="Doggy Decoder Webcam Translator"
         );
         faq_state_4 = spawn node::faq_state(
             question="What is the Premium Beta Lifetime Membership?",
