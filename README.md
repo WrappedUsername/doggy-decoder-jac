@@ -90,6 +90,10 @@ sudo service redis-server restart
 ```
 
 ```bash
+jsctl -m
+```
+
+```bash
 actions load module jac_nlp.bi_enc
 ```
 

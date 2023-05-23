@@ -1,14 +1,41 @@
 // SPDX-License-Identifier: MIT
+/**
+      :::::::::   ::::::::   ::::::::   ::::::::  :::   ::: 
+     :+:    :+: :+:    :+: :+:    :+: :+:    :+: :+:   :+:  
+    +:+    +:+ +:+    +:+ +:+        +:+         +:+ +:+    
+   +#+    +:+ +#+    +:+ :#:        :#:          +#++:      
+  +#+    +#+ +#+    +#+ +#+   +#+# +#+   +#+#    +#+        
+ #+#    #+# #+#    #+# #+#    #+# #+#    #+#    #+#         
+#########   ########   ########   ########     ###          
+
+      :::::::::  :::::::::: ::::::::   ::::::::  :::::::::  :::::::::: ::::::::: 
+     :+:    :+: :+:       :+:    :+: :+:    :+: :+:    :+: :+:        :+:    :+: 
+    +:+    +:+ +:+       +:+        +:+    +:+ +:+    +:+ +:+        +:+    +:+  
+   +#+    +:+ +#++:++#  +#+        +#+    +:+ +#+    +:+ +#++:++#   +#++:++#:    
+  +#+    +#+ +#+       +#+        +#+    +#+ +#+    +#+ +#+        +#+    +#+    
+ #+#    #+# #+#       #+#    #+# #+#    #+# #+#    #+# #+#        #+#    #+#     
+#########  ########## ########   ########  #########  ########## ###    ###      
+
+      :::::::::     :::   :::   :::  :::   :::   :::::::::: ::::    ::: ::::::::::: :::::::: 
+     :+:    :+:  :+: :+: :+:   :+: :+:+: :+:+:  :+:        :+:+:   :+:     :+:    :+:    :+: 
+    +:+    +:+ +:+   +:+ +:+ +:+ +:+ +:+:+ +:+ +:+        :+:+:+  +:+     +:+    +:+         
+   +#++:++#+ +#++:++#++: +#++:  +#+  +:+  +#+ +#++:++#   +#+ +:+ +#+     +#+    +#++:++#++   
+  +#+       +#+     +#+  +#+   +#+       +#+ +#+        +#+  +#+#+#     +#+           +#+    
+ #+#       #+#     #+#  #+#   #+#       #+# #+#        #+#   #+#+#     #+#    #+#    #+#     
+###       ###     ###  ###   ###       ### ########## ###    ####     ###     ########       
+ */
 pragma solidity 0.8.9;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+/// @author WrappedUsername
 contract DoggyDecoderPayments is Ownable {
-    // State variable price .0025
-    uint256 public price = 0.0025 ether;
+    /// @notice Price will be in MATIC
+    uint256 public price = 8 ether;
 
     event PaymentReceived(address indexed payer, uint256 amount);
-    event Withdrawal(uint amount, uint when);
+    event UpdatePrice(uint256 amount, uint256 when);
+    event Withdrawal(uint256 amount, uint256 when);
 
     constructor() {}
 
@@ -18,13 +45,17 @@ contract DoggyDecoderPayments is Ownable {
         emit PaymentReceived(msg.sender, msg.value);
     }
 
-    function updateSubscriptionPrice(uint256 newSubscriptionPrice) public onlyOwner {
+    function updateSubscriptionPrice(uint256 newSubscriptionPrice) public payable onlyOwner {
         price = newSubscriptionPrice;
+        emit UpdatePrice(newSubscriptionPrice, block.timestamp);
     }
 
-    // Only owner withdraw function
+    function getThisBalance() public view onlyOwner returns(uint256) {
+        return address(this).balance;
+    }
+
     function withdraw() public onlyOwner {
-        emit Withdrawal(address(this).balance, block.timestamp);
         payable(owner()).transfer(address(this).balance);
+        emit Withdrawal(address(this).balance, block.timestamp);
     }
 }
